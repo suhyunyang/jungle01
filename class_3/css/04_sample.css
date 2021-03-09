@@ -106,7 +106,7 @@
 	height:150px;
 	background: #999;
 	margin: 0 20px;
-	transition:background 0.5s, transform 0.5s;
+	transition:background-color 0.5s, transform 0.5s;
 }
 .section.box_area .box:hover{
 	background: #c55353;
@@ -160,10 +160,11 @@
 
 	.section.box_area .box:hover{
 		transform:scale(1);
+		/* 레이아웃 안깨지게끔 */
 	}
 
 	.section.table{
-		border:0;
+		border:none;
 	}
 
 	.section.table .table .row{
@@ -189,12 +190,14 @@
 		width: 70px;
 		background: #D7BA7D;
 		position: absolute;
+		/* 앱솔루트로 딱 붙이기 가능 / 오른쪽 위 마진탑 0을 주면 딱 붙는다*/
 		right:0;
 		top: 0;
 		margin-top:0;
 	}
 	.header .nav:hover{
 		height:100vh;
+		/* vh:창 사이즈 기준 100% 채워라 */
 		width:200px;
 		z-index: 2;
 	}
