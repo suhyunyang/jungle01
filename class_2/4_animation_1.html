@@ -13,6 +13,56 @@
 				color:#fff;
 				padding:20px;
 			}
+			/* transform */
+			.section .box {
+				height: 50px;
+				width: 50px;
+				background: red;
+				margin: 0 auto;
+				/* animation: key_name 3s infinite;
+				transfrom: scale(2);
+				transform: translate(30px, -70px); */
+				transform: rotate(45deg);
+			}
+			.section .box {
+				height: 50px;
+				width: 50px;
+				background: red;
+				margin: 0 auto;
+				transition: transform 0.5s;
+			}
+			.section .box:hover{
+				transform:rotate(180deg);
+			}
+			/* transition */
+			/* .section .box {
+				height: 50px;
+				width: 50px;
+				background: red;
+				margin: 0 auto;
+				animation: key_name 3s forwards;
+			} */
+			/* @keyframes key_name{
+				0%{height: 50px; width:50px; margin-top:0;}
+				50%{height: 100px; width: 50px; margin-top:100;}
+				100%{height: 100px; width: 100px; margin-top:0;}
+			} */
+			/* animation */
+			/* .section .box {
+				height: 50px;
+				width: 50px;
+				background: red;
+				margin: 0 auto;
+				transition: all 0.5s; */
+				/* width값 있을 때 마진 오토로 가운데 정렬 가능하다 */
+			/* }
+			.section .box:hover {
+				height: 100px;
+				width: 100px;
+			} */
+			
+	
+
 		</style>
 
   </head>
@@ -27,7 +77,7 @@
     </div>
 		<div class="container">
 				<div class="section">
-					
+					<div class="box"></div>
 				</div>
 				
 		</div>

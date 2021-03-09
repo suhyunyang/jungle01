@@ -1,35 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>html</title>
-		<style>
-			body, h1{margin:0}
-			a{color:#fff}
 
-			.header{
-				background:#333;
-				color:#fff;
-				padding:20px;
-			}
-		</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>html</title>
+	<style>
+		body,
+		h1 {
+			margin: 0
+		}
 
-  </head>
-  <body>
-    <div class="header">
-			<h1>logo</h1>
-			<div class="nav">
-				<a href="#">menu1</a>
-				<a href="#">menu2</a>
-				<a href="#">menu3</a>
-			</div>
-    </div>
-		<div class="container">
-				<div class="aside"></div>
-				<div class="section">
-					a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
-				</div>
+		a {
+			color: #fff
+		}
+
+		.header {
+			background: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		.section {
+			height: 100px;
+			background: #999;
+			text-align: center;
+		}
+
+		.section>span {
+			height: 50px;
+			width: 50px;
+			background-color: red;
+			display: block;
+			/* vertical-align: middle; */
+
+			/* inline-block은 글자속성처럼 정렬된다 */
+			/* 그냥 block 했을때는 글자 속성잃어 부모의 정렬속성 제어 안된다 */
+		}
+
+		.section>span:first-child {
+			height: 70px;
+			float: left;
+		}
+
+		.section>span:last-child {
+			float: right;
+		}
+
+		.section:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.section {
+			height: 100px;
+			background: #999;
+			text-align: center;
+		}
+
+		.header:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.header h1 {
+			float: left;
+		}
+
+		.header .nav {
+			float: right;
+		}
+		.tbl {
+			display: table;
+			width:100%;
+		}
+		.tbl-cell {
+			display:table-cell;
+			background: #333;
+			/* height:50px; */
+		}
+		.tbl-cell:last-child {
+			background: rgb(99, 87, 92);
+			width:80%;
+		}
+		.flex-area{
+			display: flex;
+		}
+		.flex-area .flex-cell{
+			background:#6feda3;
+		}
+		.flex-area .flex-cell:first-child {
+			width:200px;
+		}
+		.flex-area .flex-cell:last-child {
+			background:yellowgreen;
+			flex:1;
+		}
+	</style>
+
+	}
+</head>
+
+<body>
+	<div class="header">
+		<h1>logo</h1>
+		<div class="nav">
+			<a href="#">menu1</a>
+			<a href="#">menu2</a>
+			<a href="#">menu3</a>
 		</div>
-  </body>
+	</div>
+	<div class="container">
+		<div class="aside"></div>
+		<div class="section">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="tbl">
+			<div class="tbl-cell">
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+			</div>
+			<div class="tbl-cell">
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+			</div>
+				
+
+		</div>
+	</div>
+	<div class="flex-area">
+		<div class="flex-cell">aaa</div>
+		<div class="flex-cell">bbb<br>bbb</div>
+	</div>
+</body>
+
 </html>
