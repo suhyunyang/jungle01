@@ -35,16 +35,16 @@
 		}
 	</style>
 	<script>
-		$(function () {
-			$(".btn_top").hide();
-			$(window).scroll(function(){
-				//console.log($(this).scrollTop());
-				if($(this).scrollTop() == 0){
-					$(".btn_top").hide(300);
-				}else{
-					$(".btn_top").show(300);
-				}
-			})
+		// $(function () {
+		// 	$(".btn_top").hide();
+		// 	$(window).scroll(function(){
+		// 		//console.log($(this).scrollTop());
+		// 		if($(this).scrollTop() == 0){
+		// 			$(".btn_top").hide(300);
+		// 		}else{
+		// 			$(".btn_top").show(300);
+		// 		}
+		// 	})
 
 			$(".btn_top").click(function(){
 				//$("html").scrollTop(0);
@@ -52,6 +52,26 @@
 					"scrollTop":0
 				}, 1000);
 			});
+			
+			//탑버튼 숨김처리
+			$(".btn_top").hide();
+
+
+			// 스크롤 위치에 따른 탑버튼 숨김/보여짐 처리
+			$(window).scroll(function(){
+				var value = $(this).scrollTop();//()안에 값이 없으면 위치값 반환
+				if(value == 0){
+					$(".btn_top").hide(300);
+				}else{
+					$(".btn_top").show(300);
+				}
+			});
+			//탑버튼 클릭 시 페이지 상단 이동 이벤트
+			$(".btn_top").click(function(){ //()안에 값이 있으면 위치 이동이벤트
+				// $("html").scrollTop(0);
+			
+			});
+
 		})
 	</script>
 </head>
