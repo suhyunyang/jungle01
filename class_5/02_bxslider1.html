@@ -11,13 +11,22 @@
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
 
+	<!-- bxsllider 공부하기
+	https://bxslider.com/options/ -->
+	
 	<script>
 		$(function () {
 			$(".section.box > ul").bxSlider({
 				minSlides: 3,
 				maxSlides: 3,
 				moveSlides: 3,
-				slideWidth: "330px"
+				slideWidth: "330px",
+				auto:true,
+				pause:2000,
+				speed:100,
+
+				// mode:"fade",
+
 			});
 		})
 	</script>
@@ -44,42 +53,44 @@
 				</ul>
 			</div>
 			<div class="section box">
-				<li class="unit">
-					<a href="#">
-						<img src="images/product_01.png" class="img" />
-						<p class="name">상품1</p>
-					</a>
-				</li>
-				<li class="unit">
-					<a href="#">
-						<img src="images/product_02.png" class="img" />
-						<p class="name">상품2</p>
-					</a>
-				</li>
-				<li class="unit">
-					<a href="#">
-						<img src="images/product_03.png" class="img" />
-						<p class="name">상품3</p>
-					</a>
-				</li>
-				<li class="unit">
-					<a href="#">
-						<img src="images/product_04.png" class="img" />
-						<p class="name">상품4</p>
-					</a>
-				</li>
-				<li class="unit">
-					<a href="#">
-						<img src="images/product_05.png" class="img" />
-						<p class="name">상품5</p>
-					</a>
-				</li>
-				<li class="unit">
-					<a href="#">
-						<img src="images/product_06.png" class="img" />
-						<p class="name">상품6</p>
-					</a>
-				</li>
+				<ul>
+					<li class="unit">
+						<a href="#">
+							<img src="images/product_01.png" class="img" />
+							<p class="name">상품1</p>
+						</a>
+					</li>
+					<li class="unit">
+						<a href="#">
+							<img src="images/product_02.png" class="img" />
+							<p class="name">상품2</p>
+						</a>
+					</li>
+					<li class="unit">
+						<a href="#">
+							<img src="images/product_03.png" class="img" />
+							<p class="name">상품3</p>
+						</a>
+					</li>
+					<li class="unit">
+						<a href="#">
+							<img src="images/product_04.png" class="img" />
+							<p class="name">상품4</p>
+						</a>
+					</li>
+					<li class="unit">
+						<a href="#">
+							<img src="images/product_05.png" class="img" />
+							<p class="name">상품5</p>
+						</a>
+					</li>
+					<li class="unit">
+						<a href="#">
+							<img src="images/product_06.png" class="img" />
+							<p class="name">상품6</p>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="footer">
