@@ -47,13 +47,13 @@
 			$(function(){
 				var num = 0;
 				setInterval(function(){
-					$(".visual .unit").removeClass("on");
-					$(".visual .unit").eq(num).addClass("on");
-					console.log(num)
-					num++;
-					if(num == 3){
-						num = 0;
-					}
+				$(".visual .unit").removeClass("on");
+				$(".visual .unit").eq(num).addClass("on");
+				console.log(num)
+				num++;
+				if(num == 3){
+				num = 0;
+				}
 					
 				},5000)
 			});

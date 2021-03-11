@@ -12,8 +12,13 @@
 		</style>
 		<script>
       $(function(){
-        //$(".wrap .box").slideUp(2000);
-        $(".wrap .box").slideDown(2000);
+        // display:none 처리 되어있는 대상 보여지게 하는 효과
+        // $(".wrap .box").slideDown(2000);
+
+        // display:block/inline/inline-block의 경우 대상이 사라지는 효과
+        // $(".wrap .box").slideUp(2000);
+
+        $(".wrap .box").slideToggle(1000);
       });
 
       
