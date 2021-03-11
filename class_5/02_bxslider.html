@@ -6,12 +6,43 @@
     <title>repl.it</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
 		<script src="js/jquery-1.8.3.min.js"></script>
-		<script>
+		<script src="js/jquery.bxslider.min.js"></script>
+    <!-- 플러그인은 항상 기본형 제이쿼리보다 아래에 있어야 한다 / 오류주의 -->
+    <style>
+      .slider_area{
+      width:500px;
+      height:200px;
+      margin: 0 auto;
+      /* background: red; */
+      }
+      .slider_area .unit{
+        width: 500px;
+        height:200px;
+        background: green;
+      }
+      .slider_area .unit.u2{
+        background: red;
+      }
+      .slider_area .unit.u3{
+        background:blue;
+      }
+    </style>
     
+    <script>
+      $(function(){
+        $(".slider_area .slider").bxslider();
+      });
     </script>
 
-  </head>
-  <body>
-    
-  </body>
+</head>
+<body>
+  <div class="slider_area">
+    <div class="slider">
+      <div class="unit u1"></div>
+      <div class="unit u2"></div>
+      <div class="unit u3"></div>
+    </div>
+  </div>
+</body>
+
 </html>
