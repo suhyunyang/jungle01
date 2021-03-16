@@ -10,7 +10,7 @@
 .container{
 	background:#eee;
 	min-height:300px;
-	padding-bottom:50px;
+	padding:50px 0;
 }
 .container .section + .section{
 	margin-top:50px;
@@ -21,12 +21,3 @@
 	background:#777;
 }
 
-.container{
-	padding:40px;
-}
-.container .map{
-	width: 500px;
-	height:400px;
-	background: #666;
-	margin: 0 auto;
-}

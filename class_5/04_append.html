@@ -13,7 +13,22 @@
 	</style>
 	<script>
 		$(function () {
-			$(".container").append("<strong>append 추가</strong>")
+			//append 기본 작동법
+			// $(".container").append("<strong>append 추가</strong>")
+			// $(".container .list > ul").append("<li class ='unit'><button>추가된 버튼</button></li>");
+
+			//목록에 버튼 추가
+			//$(".container .list > ul").append('<li class ="unit"><button>버튼'+(i+1)+'</button></li>');
+
+			//인트로 버튼 클릭시 10개의 버튼 추가 이벤트
+
+			$(".btn_intro").click(function () {
+				for (var i = 0; i < 10; i++) {
+					$(".container .list > ul").append('<li class ="unit"><button>버튼'+(i+1)+'</button></li>');
+				}
+				//자신(.btn_intro) 숨김버튼
+				$(this).hide();
+			});
 		})
 	</script>
 
@@ -31,6 +46,14 @@
 			</div>
 		</div>
 		<div class="container">
+			<div class="section intro">
+				<button class="btn_intro">버튼추가</button>
+			</div>
+			<div class="section list">
+				<ul>
+					
+				</ul>
+			</div>
 
 		</div>
 		<div class="footer">
