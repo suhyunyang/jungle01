@@ -33,10 +33,23 @@
 
 }
 .chat_area .item .box .msg{
-    backgroud: #fff;
-}
-.chat_area .item .box .msg .tiem{}
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
 
+}
+.chat_area .item .box .time{
+    position: absolute;
+    right: -75px;
+    width: 70px;
+    bottom:3px;
+    font-size: 11px;
+    color: #999;
+}
+.chat_area .item.mymsg .box .time{
+    right: auto;
+    left: -75px;
+}
 
 /***** 입력창영역 *****/
 .input_area{}
