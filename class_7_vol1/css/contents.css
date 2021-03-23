@@ -1,0 +1,17 @@
+.wrap{
+    border:1px solid #999;
+    
+
+}
+
+/* 채팅창영역 */
+.chat_area{}
+.chat_area .item{}
+.chat_area .item .box{}
+.chat_area .item .box .msg{}
+.chat_area .item .box .msg .tiem{}
+
+
+/* 입력창영역 */
+.input_area{}
+.input_area > input[type="text"]{}

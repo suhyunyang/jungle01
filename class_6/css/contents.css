@@ -34,12 +34,13 @@
 	display: block;
 	height:100px;
 	width:100px;
-	line-height: 100px;
 	text-align: center;
 	background:#91c170;
 	color: #fff;
 	border:none;
+	/* 커서모양 바꾸는 법 */
 	cursor:pointer;
+
 }
 .section.reservation .unit button:hover{
 	background:#78ab55;
@@ -48,8 +49,12 @@
 .section.reservation .unit button[disabled]:hover
 {
   background:#BABABA url(../img/img_disabled.png) no-repeat;
+  /* 위에 50%하면 사진 이미지 줄어든다 */
   background-size:100% 100%;
+  /*텍스트 숨김처리 -   font-size:0 쓰면안됨:보이스로 안읽혀서*/
+	/* 그냥 쭉 밀리기 해서 읽혀지지만 안보이게 하는 것 */
   text-indent: -9999px;
+
   cursor:default;
 }
 .section.reservation .unit button.select{
