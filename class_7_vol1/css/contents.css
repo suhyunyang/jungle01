@@ -1,17 +1,43 @@
 .wrap{
     border:1px solid #999;
-    
-
+    width: 300px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #333;
 }
 
-/* 채팅창영역 */
-.chat_area{}
-.chat_area .item{}
-.chat_area .item .box{}
-.chat_area .item .box .msg{}
+/***** 채팅창영역 *****/
+.chat_area{
+    height: 350px;
+    background: #acc2d2;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* 말풍선 메세지 영역 */
+.chat_area .item{
+
+}
+.chat_area .item.mymsg{
+    text-align: right;
+}
+
+/* 말풍선 */
+.chat_area .item .box{
+    display: inline-block;
+    max-width: 180px;
+    position: relative;
+
+}
+.chat_area .item .box .msg{
+    backgroud: #fff;
+}
 .chat_area .item .box .msg .tiem{}
 
 
-/* 입력창영역 */
+/***** 입력창영역 *****/
 .input_area{}
 .input_area > input[type="text"]{}
